@@ -25,8 +25,8 @@ This project uses gene expression data to predict patient response to treatment.
    - Top genes identified and coefficients visualized for insight into biological relevance.
 
 ## Results
-- **Top 10 genes** identified as predictive.
-- **Test accuracy:** ~91%.
+- **Top 10 genes** most predictive of treatment response were identified using ANOVA F-score.
+- **Test accuracy:** Logistic regression achieved ~91% test accuracy.
 - **Cross-validation accuracy:** ~58% (reflects small sample size and need for robust evaluation).
 
 ## Key Insights
