@@ -9,20 +9,20 @@ Predicting treatment response in breast cancer is difficult due to high-dimensio
 
 ## Approach
 1. **Data Cleaning & Preprocessing**
-   - Selected numeric features and imputed missing values.
+- Selected numeric features and imputed missing values.
 2. **Exploratory Data Analysis (EDA)**
-   - Plotted response distribution, correlation heatmaps, and gene expression trends.
+- Plotted response distribution, correlation heatmaps, and gene expression trends.
 3. **Feature Selection**
-   - Variance threshold to remove low-variance genes.
-   - ANOVA F-score (`SelectKBest`) to select top 10 genes most associated with response.
+- Variance threshold to remove low-variance genes.
+- ANOVA F-score (`SelectKBest`) to select top 10 genes most associated with response.
 4. **Modeling**
-   - Logistic Regression with L2 regularization (`liblinear` solver) for classification.
-   - Train-test split with scaling.
+- Logistic Regression with L2 regularization (`liblinear` solver) for classification.
+- Train-test split with scaling.
 5. **Evaluation**
-   - Test accuracy, confusion matrix, classification report.
+- Test accuracy, confusion matrix, classification report.
    - 5-Fold stratified cross-validation for robust performance.
 6. **Interpretation**
-   - Top genes identified and coefficients visualized for insight into biological relevance.
+- Top genes identified and coefficients visualized for insight into biological relevance.
 
 ## Results
 - **Top 10 genes** most predictive of treatment response were identified using ANOVA F-score. These genes were: ABCA7, ALDH16A1, CDCA8, H2AC11, H2BC11, H2BC12, LRRC37A4P, PAQR6, SOX15 and TMNT2.
