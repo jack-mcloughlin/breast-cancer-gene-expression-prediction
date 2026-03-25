@@ -20,7 +20,6 @@ Predicting treatment response in breast cancer is difficult due to high-dimensio
 - Train-test split with scaling.
 5. **Evaluation**
 - Test accuracy, confusion matrix, classification report.
-   - 5-Fold stratified cross-validation for robust performance.
 6. **Interpretation**
 - Top genes identified and coefficients visualized for insight into biological relevance.
 
