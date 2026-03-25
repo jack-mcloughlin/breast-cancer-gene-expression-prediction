@@ -1,7 +1,7 @@
 # Breast Cancer Gene Expression Response Prediction
 
 ## Overview
-This project uses gene expression data to predict patient response to treatment. It demonstrates a complete data analysis workflow including feature selection, model building, evaluation, and interpretation - useful for bioinformatics and precision medicine applications.
+Predicting treatment response in breast cancer is difficult due to high-dimensional genomic data and small patient cohorts. This project explores whether a subset of 10 key genes can reliably predict patient outcomes using regularized logistic regression.
 
 ## Dataset
 - Source: [Breast Cancer Gene Expression Dataset](https://huggingface.co/datasets/mubashir1837/Breast-Cancer-Gen-Expression-Dataset)
@@ -25,19 +25,15 @@ This project uses gene expression data to predict patient response to treatment.
    - Top genes identified and coefficients visualized for insight into biological relevance.
 
 ## Results
-- **Top 10 genes** most predictive of treatment response were identified using ANOVA F-score.
+- **Top 10 genes** most predictive of treatment response were identified using ANOVA F-score. These genes were: ABCA7, ALDH16A1, CDCA8, H2AC11, H2BC11, H2BC12, LRRC37A4P, PAQR6, SOX15 and TMNT2.
 - **Test accuracy:** Logistic regression achieved ~91% test accuracy.
 - **Cross-validation accuracy:** ~58% (reflects small sample size and need for robust evaluation).
 
 ## Key Insights
-- Predictive modeling can highlight potential biomarkers.
-- Small sample sizes require careful feature selection and regularization.
-- Logistic regression coefficients provide interpretable insights into gene contributions.
+Using predictive modeling, potential biomarkers can be highlighted but small sample sizes mean that careful feature selection and regularization is necessary. The logistic regression coefficients give key insights into which genes can contribute to treatment responses. 
 
-## Requirements
-- Python 3.x  
-- pandas, numpy, matplotlib, seaborn  
-- scikit-learn
+## Limitations
+The divergence between test accuracy and cross-validation performance suggests high sensitivity to the train-test split, likely due to the small N=51 sample size. This highlights the risk of overfitting in high-dimensional biological data.
 
 ## Next Steps
 - Expand to larger datasets for more robust models.  
